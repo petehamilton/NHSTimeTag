@@ -1,0 +1,11 @@
+#doctors
+  - @doctors.each do |doctor|
+    .doctor{:id => doctor.id}
+      .details
+        .name
+          = doctor.name
+        .status
+          = doctor.get_status
+      .update_box
+
+#notifications
