@@ -89,5 +89,6 @@ DEPENDENCIES
   heroku
   jquery-rails
   rails (= 3.0.7)
+  rake (= 0.9.0)
   sass
   sqlite3
