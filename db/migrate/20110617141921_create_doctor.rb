@@ -1,6 +1,6 @@
-class CreateConsultants < ActiveRecord::Migration
+class CreateDoctors < ActiveRecord::Migration
   def self.up
-    create_table :consultants do |t|
+    create_table :doctors do |t|
       t.string :title
       t.string :last_name
       t.integer :clinic_id
@@ -10,6 +10,6 @@ class CreateConsultants < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :consultants
+    drop_table :doctors
   end
 end

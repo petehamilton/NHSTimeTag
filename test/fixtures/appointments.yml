@@ -1,149 +1,149 @@
 appointment1:
   patient: :patient1
-  clinic: :clinic1
+  doctor: :doctor1
   datetime: 06/22/2011 09:00
   attending: true
 
 appointment2:
   patient: :patient2
-  clinic: :clinic1
+  doctor: :doctor1
   datetime: 06/22/2011 09:20
   attending: true
 
 appointment3:
   patient: :patient3
-  clinic: :clinic1
+  doctor: :doctor1
   datetime: 06/22/2011 09:40
   attending: true
 
 appointment4:
   patient: :patient4
-  clinic: :clinic1
+  doctor: :doctor1
   datetime: 06/22/2011 10:00
   attending: true
 
 appointment5:
   patient: :patient5
-  clinic: :clinic1
+  doctor: :doctor1
   datetime: 06/22/2011 10:20
   attending: true
 
 appointment6:
   patient: :patient6
-  clinic: :clinic2
+  doctor: :doctor2
   datetime: 06/22/2011 09:00
   attending: true
 
 appointment7:
   patient: :patient7
-  clinic: :clinic2
+  doctor: :doctor2
   datetime: 06/22/2011 09:10
   attending: true
 
 appointment8:
   patient: :patient8
-  clinic: :clinic2
+  doctor: :doctor2
   datetime: 06/22/2011 09:20
   attending: true
 
 appointment9:
   patient: :patient9
-  clinic: :clinic2
+  doctor: :doctor2
   datetime: 06/22/2011 09:30
   attending: true
 
 appointment10:
   patient: :patient10
-  clinic: :clinic2
+  doctor: :doctor2
   datetime: 06/22/2011 09:40
   attending: true
 
 appointment11:
   patient: :patient11
-  clinic: :clinic3
+  doctor: :doctor3
   datetime: 06/22/2011 09:00
   attending: true
 
 appointment12:
   patient: :patient12
-  clinic: :clinic3
+  doctor: :doctor3
   datetime: 06/22/2011 09:20
   attending: true
 
 appointment13:
   patient: :patient13
-  clinic: :clinic3
+  doctor: :doctor3
   datetime: 06/22/2011 09:40
   attending: true
 
 appointment14:
   patient: :patient14
-  clinic: :clinic3
+  doctor: :doctor3
   datetime: 06/22/2011 10:00
   attending: true
 
 appointment15:
   patient: :patient15
-  clinic: :clinic3
+  doctor: :doctor3
   datetime: 06/22/2011 10:20
   attending: true
 
 appointment16:
   patient: :patient16
-  clinic: :clinic4
+  doctor: :doctor4
   datetime: 06/22/2011 14:00
   attending: true
 
 appointment17:
   patient: :patient17
-  clinic: :clinic4
+  doctor: :doctor4
   datetime: 06/22/2011 14:10
   attending: true
 
 appointment18:
   patient: :patient18
-  clinic: :clinic4
+  doctor: :doctor4
   datetime: 06/22/2011 14:20
   attending: true
 
 appointment19:
   patient: :patient19
-  clinic: :clinic4
+  doctor: :doctor4
   datetime: 06/22/2011 14:30
   attending: true
 
 appointment20:
   patient: :patient20
-  clinic: :clinic4
+  doctor: :doctor4
   datetime: 06/22/2011 14:40
   attending: true
 
 appointment21:
   patient: :patient21
-  clinic: :clinic5
+  doctor: :doctor5
   datetime: 06/22/2011 14:00
   attending: true
 
 appointment22:
   patient: :patient22
-  clinic: :clinic5
+  doctor: :doctor5
   datetime: 06/22/2011 14:10
   attending: true
 
 appointment23:
   patient: :patient23
-  clinic: :clinic5
+  doctor: :doctor5
   datetime: 06/22/2011 14:20
   attending: true
 
 appointment24:
   patient: :patient24
-  clinic: :clinic5
+  doctor: :doctor5
   datetime: 06/22/2011 14:30
   attending: true
 
 appointment25:
   patient: :patient25
-  clinic: :clinic5
+  doctor: :doctor5
   datetime: 06/22/2011 14:40
   attending: true

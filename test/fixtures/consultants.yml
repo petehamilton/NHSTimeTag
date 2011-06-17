@@ -1,24 +1,29 @@
-consultant1:
+doctor1:
   clinic: :clinic1
   title: Mr
+  first_name: Niell
   last_name: Armstrong
 
-consultant2:
+doctor2:
   clinic: :clinic2
   title: Prof
+  first_name: Fred
   last_name: Littlechild
 
-consultant3:
+doctor3:
   clinic: :clinic3
   title: Mr
+  first_name: Alex
   last_name: Breeching
 
-consultant4:
+doctor4:
   clinic: :clinic4
   title: Miss
-  last_name: Iris Reteena
+  first_name: Iris
+  last_name: Reteena
 
-consultant5:
+doctor5:
   clinic: :clinic5
   title: Dr
+  first_name: Xin
   last_name: Nu-Chin
