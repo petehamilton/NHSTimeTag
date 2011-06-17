@@ -5,6 +5,7 @@ class CreateDoctors < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.integer :clinic_id
+      t.integer :current_delay
 
       t.timestamps
     end

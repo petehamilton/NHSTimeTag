@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20110617143946) do
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "clinic_id"
+    t.integer  "current_delay"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
