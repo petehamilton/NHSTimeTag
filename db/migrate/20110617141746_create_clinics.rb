@@ -2,7 +2,7 @@ class CreateClinics < ActiveRecord::Migration
   def self.up
     create_table :clinics do |t|
       t.string :name
-      t.integer :department_id
+      t.integer :hospital_id
 
       t.timestamps
     end

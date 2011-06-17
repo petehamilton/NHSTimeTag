@@ -1,4 +1,4 @@
 class Clinic < ActiveRecord::Base
-  belongs_to :department
+  belongs_to :hospital
   has_one :consultant
 end

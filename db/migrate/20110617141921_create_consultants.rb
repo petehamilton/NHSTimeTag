@@ -1,7 +1,7 @@
 class CreateConsultants < ActiveRecord::Migration
   def self.up
     create_table :consultants do |t|
-      t.string :first_name
+      t.string :title
       t.string :last_name
       t.integer :clinic_id
 

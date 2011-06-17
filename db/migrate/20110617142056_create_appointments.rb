@@ -1,9 +1,10 @@
 class CreateAppointments < ActiveRecord::Migration
   def self.up
     create_table :appointments do |t|
-      t.datetime :time
+      t.datetime :datetime
       t.integer :patient_id
       t.integer :clinic_id
+      t.boolean :attending, :default => true
 
       t.timestamps
     end

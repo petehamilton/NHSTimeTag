@@ -4,10 +4,11 @@ class CreatePatients < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :phone
+      t.string :email
       t.boolean :contact_text
       t.boolean :contact_email
       t.boolean :contact_phonecall
-      t.integer :nhs_number
+      t.string :nhs_number
 
       t.timestamps
     end

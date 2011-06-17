@@ -1,3 +1,3 @@
 class Hospital < ActiveRecord::Base
-  has_many :departments
+  has_many :clinics
 end

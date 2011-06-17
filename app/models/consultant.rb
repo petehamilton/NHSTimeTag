@@ -1,3 +1,3 @@
 class Consultant < ActiveRecord::Base
-  has_one :clinic
+  belongs_to :clinic
 end
