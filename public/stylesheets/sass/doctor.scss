@@ -1,11 +1,3 @@
-@import "rounded";
-
-.doctor{
-  border: 1px solid #CCCCCC;
-  background-color: #FFFFFF;
-  padding: 10px;
-  @include rounded(all,4px);
-}
 .notification {
   width: 200px;
   border: 1px solid #000000;
