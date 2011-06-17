@@ -1,9 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+clinic1:
+  hospital: :1
+  Name: Orthopaedics
 
-one:
-  name: MyString
-  department_id: 1
+clinic2:
+  hospital: :1
+  Name: Paediatrics
 
-two:
-  name: MyString
-  department_id: 1
+clinic3:
+  hospital: :1
+  Name: Obstetrics
+
+clinic4:
+  hospital: :1
+  Name: Opthalmology
+
+clinic5:
+  hospital: :1
+  Name: Maxiofacial

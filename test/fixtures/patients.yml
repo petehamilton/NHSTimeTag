@@ -1,19 +1,253 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+patient1:
+  first_name: Alan 
+  last_name: Armstrong
+  phone: 0123456789
+  email: a.armstrong@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000001
 
-one:
-  first_name: MyString
-  last_name: MyString
-  phone: MyString
+patient2:
+  first_name: Ahmed 
+  last_name: Amir
+  phone: 0123456732
+  email: a.armir@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000002
+
+patient3:
+  first_name: Adele 
+  last_name: Allsopp
+  phone: 012345234
+  email: a.allsopp@example.com
   contact_text: false
   contact_email: false
-  contact_email: false
-  nhs_number: 1
+  contact_phonecall: true
+  nhs_number: 000003
 
-two:
-  first_name: MyString
-  last_name: MyString
-  phone: MyString
+patient4:
+  first_name: Alice 
+  last_name: Allington
+  phone: 0778230192
+  email: a.allington@example.com
+  contact_text: true
+  contact_email: false
+  contact_phonecall: false
+  nhs_number: 000004
+
+patient5:
+  first_name: Ann 
+  last_name: Anderson
+  phone: 0787192832
+  email: a.anderson@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000005
+
+patient6:
+  first_name: Brenda 
+  last_name: Busby
+  phone: 0146556789
+  email: b.busby@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000006
+
+patient7:
+  first_name: Beverly 
+  last_name: Baker
+  phone: 0778293621
+  email: b.baker@example.com
+  contact_text: true
+  contact_email: false
+  contact_phonecall: false
+  nhs_number: 000007
+
+patient8:
+  first_name: Belle 
+  last_name: Butcher
+  phone: 0123834836
+  email: b.butcher@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000008
+
+patient9:
+  first_name: Briony 
+  last_name: Bevan
+  phone: 0778231221
+  email: b.bevan@example.com
+  contact_text: true
+  contact_email: false
+  contact_phonecall: false
+  nhs_number: 000009
+
+patient10:
+  first_name: Belinda 
+  last_name: Brice
+  phone: 0123723678
+  email: b.brice@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000010
+
+patient11:
+  first_name: Chris 
+  last_name: Charleson
+  phone: 0778292121
+  email: c.charleson@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000011
+
+patient12:
+  first_name: Charles 
+  last_name: Christian
+  phone: 0123647324
+  email: c.christian@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000012
+
+patient13:
+  first_name: Cilla 
+  last_name: Cutting
+  phone: 0771233621
+  email: c.cutting@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000013
+
+patient14:
+  first_name: Catriona 
+  last_name: Cook
+  phone: 0209321482
+  email: c.cook@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000014
+
+patient15:
+  first_name: Cyril 
+  last_name: Charteris
+  phone: 0208293621
+  email: c.charteris@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000015
+
+patient16:
+  first_name: Deborah 
+  last_name: Dunn
+  phone: 0778265621
+  email: d.dunn@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000016
+
+patient17:
+  first_name: Derek 
+  last_name: Dove
+  phone: 0123893621
+  email: d.dove@example.com
   contact_text: false
   contact_email: false
+  contact_phonecall: true
+  nhs_number: 000017
+
+patient18:
+  first_name: Dorinda 
+  last_name: Dellalio
+  phone: 07789893621
+  email: d.dellalio@example.com
+  contact_text: true
+  contact_email: true
+  contact_phonecall: true
+  nhs_number: 000018
+
+patient19:
+  first_name: Dexter 
+  last_name: Drew
+  phone: 0789893621
+  email: d.drew@example.com
+  contact_text: true
   contact_email: false
-  nhs_number: 1
+  contact_phonecall: true
+  nhs_number: 000019
+
+patient20:
+  first_name: Dev
+  last_name: Desai
+  phone: 0123893622
+  email: false
+  contact_text: false
+  contact_email: false
+  contact_phonecall: true
+  nhs_number: 000020
+
+patient21:
+  first_name: Eric
+  last_name: Edwards
+  phone: 0123893376
+  email: false
+  contact_text: false
+  contact_email: false
+  contact_phonecall: true
+  nhs_number: 000021
+
+patient22:
+  first_name: Edna
+  last_name: Eagles
+  phone: 0778893376
+  email: e.eagles.example.com
+  contact_text: true
+  contact_email: false
+  contact_phonecall: true
+  nhs_number: 000022
+
+patient23:
+  first_name: Elana
+  last_name: Elanavic
+  phone: 0187893376
+  email: false
+  contact_text: false
+  contact_email: false
+  contact_phonecall: true
+  nhs_number: 000023
+
+patient24:
+  first_name: Edward
+  last_name: Evans
+  phone: 0778932617
+  email: false
+  contact_text: false
+  contact_email: false
+  contact_phonecall: true
+  nhs_number: 000024
+
+patient25:
+  first_name: Estelle
+  last_name: Eustebio
+  phone: false
+  email: e.eustebio@example.com
+  contact_text: false
+  contact_email: true
+  contact_phonecall: false
+  nhs_number: 000025
+
+
+
+

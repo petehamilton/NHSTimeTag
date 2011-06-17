@@ -1,11 +1,24 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+consultant1:
+  clinic: :clinic1
+  title: Mr
+  last_name: Armstrong
 
-one:
-  first_name: MyString
-  last_name: MyString
-  clinic_id: 1
+consultant2:
+  clinic: :clinic2
+  title: Prof
+  last_name: Littlechild
 
-two:
-  first_name: MyString
-  last_name: MyString
-  clinic_id: 1
+consultant3:
+  clinic: :clinic3
+  title: Mr
+  last_name: Breeching
+
+consultant4:
+  clinic: :clinic4
+  title: Miss
+  last_name: Iris Reteena
+
+consultant5:
+  clinic: :clinic5
+  title: Dr
+  last_name: Nu-Chin
