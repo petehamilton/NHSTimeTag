@@ -1,3 +1,3 @@
-class Consultant < ActiveRecord::Base
+class Doctor < ActiveRecord::Base
   belongs_to :clinic
 end
