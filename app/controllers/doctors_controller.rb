@@ -8,15 +8,17 @@ class DoctorsController < ApplicationController
     
     if params[:id]
       @doctor = Doctor.find(params[:id])
-      @cancelled_appointments = @doctor.appointments.where("updated_at > ? AND attending = ?", @last_polled, false)
+      @appointments = @doctor.appointments.where("updated_at > ? AND attending = ?", @last_polled, false)
     else
-      @cancelled_appointments = Appointment.where("updated_at > ? AND attending = ?", @last_polled, false)
+      @appointments = Appointment.where("updated_at > ? AND attending = ?", @last_polled, false)
     end
     
-    puts @cancelled_appointments.inspect
-    
-    respond_to do |format|
-      format.json{ render :json => @cancelled_appointments.to_json }
+    @appointments.each do |appointment|
+      appointment.save
     end
+    
+    puts @appointments.inspect
+    
+    render :partial => "recent_cancellations"
   end
 end

@@ -1,0 +1,6 @@
+- @appointments.each do |appointment|
+  .notification
+    .title
+      = appointment.patient.name
+    .message
+      = "From the #{appointment.doctor.name} clinic"
