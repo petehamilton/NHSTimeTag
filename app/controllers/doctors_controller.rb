@@ -1,4 +1,5 @@
 class DoctorsController < ApplicationController
+
   def show
     puts "Do nothing!"
   end
@@ -21,4 +22,11 @@ class DoctorsController < ApplicationController
     
     render :partial => "recent_cancellations"
   end
+
+  def update_delay
+    doctor = Doctor.find(params[:id])
+    doctor.current_delay = params[:delay]
+    doctor.save
+  end
+
 end
