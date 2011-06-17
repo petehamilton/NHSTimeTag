@@ -1,19 +1,19 @@
 clinic1:
-  hospital: :1
+  hospital: :hospital1
   Name: Orthopaedics
 
 clinic2:
-  hospital: :1
+  hospital: :hospital1
   Name: Paediatrics
 
 clinic3:
-  hospital: :1
+  hospital: :hospital1
   Name: Obstetrics
 
 clinic4:
-  hospital: :1
+  hospital: :hospital1
   Name: Opthalmology
 
 clinic5:
-  hospital: :1
+  hospital: :hospital1
   Name: Maxiofacial

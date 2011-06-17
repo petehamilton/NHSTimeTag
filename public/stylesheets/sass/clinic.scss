@@ -1,10 +1,23 @@
-.notification {
-  width: 200px;
-  border: 1px solid #000000;
-  background-color: #eeeeee;
-  padding:10px;
+@import "rounded";
+#doctors{
+  width: 700px;
+  .doctor{
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    padding: 10px;
+    @include rounded(all,4px);
+  }
+}
+
+#notifications{
+  .notification {
+    width: 200px;
+    border: 1px solid #000000;
+    background-color: #eeeeee;
+    padding:10px;
   
-  .title{
-    font-weight: bold;
+    .title{
+      font-weight: bold;
+    }
   }
 }
