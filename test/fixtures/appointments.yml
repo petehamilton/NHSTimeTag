@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  time: 2011-06-17 15:20:56
+  patient_id: 1
+  clinic_id: 1
+
+two:
+  time: 2011-06-17 15:20:56
+  patient_id: 1
+  clinic_id: 1
