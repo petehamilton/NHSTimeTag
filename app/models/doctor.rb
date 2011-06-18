@@ -1,5 +1,6 @@
 class Doctor < ActiveRecord::Base
   belongs_to :clinic
+  has_many :appointments
   
   def name
     return "#{self.first_name} #{self.last_name}"

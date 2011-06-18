@@ -4,6 +4,17 @@ class DoctorsController < ApplicationController
     puts "Do nothing!"
   end
   
+  def get_appointments
+    if params[:id]
+      @doctor = Doctor.find(params[:id])
+      @appointments = @doctor.appointments
+    else
+      @appointments = Appointment.all
+    end
+
+    render :partial => "appointments"
+  end
+
   def get_cancellations
     @last_polled = Time.at(params[:last_polled].to_i)
     
@@ -15,6 +26,7 @@ class DoctorsController < ApplicationController
     end
     
     @appointments.each do |appointment|
+      appointment.touch
       appointment.save
     end
     
