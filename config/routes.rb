@@ -1,4 +1,6 @@
 NHSTimeTag::Application.routes.draw do
+  match "/appointments/:id/cancel" => "appointments#cancel"
+  match "/appointments/:id/reschedule" => "appointments#cancel", :reschedule => true
   match "/doctors/get_appointments" => "doctors#get_appointments"
   match "/doctors/:id/get_appointments" => "doctors#get_appointments"
   match "/doctors/get_cancellations" => "doctors#get_cancellations"

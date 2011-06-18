@@ -1,0 +1,1 @@
+%p= "Appointment for #{@appointment.patient.name} with #{@appointment.doctor.name} in the #{@appointment.doctor.clinic.name} at #{@appointment.datetime} has been successfully cancelled" + (@appointment.reschedule ? " and been marked for rescheduling" : "")

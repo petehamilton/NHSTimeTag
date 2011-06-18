@@ -1,2 +1,9 @@
 hospital1:
   name: Sickhampton General Hospital
+  latitude: 51.521902
+  longitude: -0.120506
+
+hospital2:
+  name: St Mary's Hospital
+  latitude: 51.517997
+  longitude: -0.174268 
