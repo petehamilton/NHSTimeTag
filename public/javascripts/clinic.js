@@ -54,15 +54,18 @@ function update_notifications(){
         url: "/doctors/get_cancellations",
         data: "last_polled=" + (notifications_last_polled),
         success: function(new_notifications) {
-            // Add the new notifications to the notifications container
-            $('#notifications').prepend(new_notifications);
-            $('.notification').css('opacity',0.5);
-            $('.notification.new').fadeIn(500);
-            $('.notification.new').effect("pulsate", { times:3 }, 500);
-            $('.notification.new').click(function (){
-                $(this).fadeOut(500).remove();
-            });
-            $('.notification.new').removeClass('new');
+            if(new_notifications != ""){
+                // Add the new notifications to the notifications container
+                $('#notifications .placeholder').remove();
+                $('#notifications').prepend(new_notifications);
+                $('.notification').css('opacity',0.5);
+                $('.notification.new').fadeIn(500);
+                $('.notification.new').effect("pulsate", { times:3 }, 500);
+                $('.notification.new').click(function (){
+                    $(this).fadeOut(500).remove();
+                });
+                $('.notification.new').removeClass('new');
+            }
         },
     });
 
