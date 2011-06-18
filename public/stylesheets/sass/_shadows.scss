@@ -1,0 +1,15 @@
+@mixin inset_shadow($h_offset, $v_offset, $blur_radius, $color) {
+  -moz-box-shadow:inset $h_offset $v_offset $blur_radius $color;
+  -webkit-box-shadow:inset $h_offset $v_offset $blur_radius $color;
+  box-shadow:inset $h_offset $v_offset $blur_radius $color;
+}
+
+@mixin shadow($h_offset, $v_offset, $blur_radius, $color) {
+  -moz-box-shadow: $h_offset $v_offset $blur_radius $color;
+  -webkit-box-shadow: $h_offset $v_offset $blur_radius $color;
+  box-shadow: $h_offset $v_offset $blur_radius $color;
+}
+
+@mixin text_shadow($h_offset, $v_offset, $blur_radius, $color) {
+  text-shadow: $h_offset $v_offset $blur_radius $color;
+}
