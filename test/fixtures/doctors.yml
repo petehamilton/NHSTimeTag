@@ -6,28 +6,28 @@ doctor1:
   current_delay: 45
 
 doctor2:
-  clinic: :clinic2
+  clinic: :clinic1
   title: Prof
   first_name: Fred
   last_name: Littlechild
   current_delay: 15
 
 doctor3:
-  clinic: :clinic3
+  clinic: :clinic1
   title: Mr
   first_name: Alex
   last_name: Breeching
   current_delay: 0
 
 doctor4:
-  clinic: :clinic4
+  clinic: :clinic1
   title: Miss
   first_name: Iris
   last_name: Reteena
   current_delay: 90
 
 doctor5:
-  clinic: :clinic5
+  clinic: :clinic2
   title: Dr
   first_name: Xin
   last_name: Nu-Chin
