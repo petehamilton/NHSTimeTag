@@ -11,9 +11,11 @@ class TextCommunicationController < ApplicationController
           appointment = patient.appointments.last
           appointment.attending = false
           appointment.save
-        where "reschedule"  
+          send_text_message(patient.phone, "Your appointment has been cancelled. Thankyou.")
+        where "reschedule"
           appointment.attending = false
-          # Something different happens here maybe?
+          send_text_message(patient.phone, "Your appointment has been cancelled. Please ring 01234567890 to reschedule.")
+          # Some other action? Notification prompt etc?
         else
           # Handle whatever else they said, but how?
       end
