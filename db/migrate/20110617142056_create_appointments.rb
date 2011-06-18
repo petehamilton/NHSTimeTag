@@ -5,6 +5,7 @@ class CreateAppointments < ActiveRecord::Migration
       t.integer :patient_id
       t.integer :doctor_id
       t.boolean :attending, :default => true
+      t.boolean :notifiable, :default => true
 
       t.timestamps
     end

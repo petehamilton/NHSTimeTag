@@ -16,17 +16,15 @@ class DoctorsController < ApplicationController
   end
 
   def get_cancellations
-    @last_polled = Time.at(params[:last_polled].to_i)
-    
     if params[:id]
       @doctor = Doctor.find(params[:id])
-      @appointments = @doctor.appointments.where("updated_at > ? AND attending = ?", @last_polled, false)
+      @appointments = @doctor.appointments.where("attending = ? AND notifiable = ?", false, true)
     else
-      @appointments = Appointment.where("updated_at > ? AND attending = ?", @last_polled, false)
+      @appointments = Appointment.where("attending = ? AND notifiable = ?", false, true)
     end
     
     @appointments.each do |appointment|
-      appointment.touch
+      appointment.notifiable = false
       appointment.save
     end
     

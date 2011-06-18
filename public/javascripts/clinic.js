@@ -52,7 +52,6 @@ function get_appointments(doctor_id){
 function update_notifications(){
     $.ajax({
         url: "/doctors/get_cancellations",
-        data: "last_polled=" + (notifications_last_polled),
         success: function(new_notifications) {
             if(new_notifications != ""){
                 // Add the new notifications to the notifications container
