@@ -26,7 +26,12 @@ body{
     padding:20px;
     background-color: #EEEEEE;
     @include text_shadow(1px, 1px, 1px, #CCCCCC);
+    margin-bottom:10px;
     
+    &:hover{
+      background-color:#BDE5F8;
+      cursor: pointer;
+    }
     .name{
       margin-top:2px;
       float:left;
