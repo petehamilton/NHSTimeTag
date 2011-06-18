@@ -69,7 +69,7 @@ function update_notifications(){
         },
     });
 
-    // notifications_last_polled = new Date().getTime() / 1000;
+    notifications_last_polled = new Date().getTime() / 1000;
 }
 
 function update_delay(button_ref){
@@ -83,9 +83,4 @@ function update_delay(button_ref){
     $(button_ref).parent().find('.handle').click();
     
     update_doctor_status(doctor_id, delay)
-}
-
-function update_doctor_status(doctor_id, delay){
-    
-    // Code to change the class & text of the doctor's status
 }
