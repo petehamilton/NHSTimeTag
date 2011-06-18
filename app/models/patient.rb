@@ -10,7 +10,7 @@ class Patient < ActiveRecord::Base
       send_text_message(self.phone, message)
     end
     if self.contact_email
-      send_text_message(self.phone, message)
+      PatientMailer.plain_email(self, message)
     end
   end
 end
