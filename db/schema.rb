@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20110617143946) do
     t.integer  "patient_id"
     t.integer  "doctor_id"
     t.boolean  "attending",  :default => true
+    t.boolean  "reschedule", :default => false
     t.boolean  "notifiable", :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
