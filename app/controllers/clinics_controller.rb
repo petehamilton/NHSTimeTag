@@ -1,6 +1,10 @@
 class ClinicsController < ApplicationController
   def index
-    @clinics = Hospital.all.first.clinics
+    if params[:hospital_id]
+      @clinics = Hospital.find(params[:hospital_id]).clinics
+    else
+      @clinics = Hospital.all.first.clinics
+    end
     puts @clinics.inspect
   end
   def show
