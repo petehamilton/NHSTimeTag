@@ -8,9 +8,9 @@ class Doctor < ActiveRecord::Base
   
   def get_status
     case self.current_delay
-      when 0..60
-        return "Running on time"
-      when 60..120
+      when 0..20
+       return "Running on time"
+      when 20..60
         return "Delayed"
       else
         return "Severely Delayed"
@@ -19,9 +19,9 @@ class Doctor < ActiveRecord::Base
   
   def get_status_class
     case self.current_delay
-      when 0..60
-        return "not-delayed"
-      when 60..120
+      when 0..20
+       return "not-delayed"
+      when 20..60
         return "delayed"
       else
         return "severely-delayed"

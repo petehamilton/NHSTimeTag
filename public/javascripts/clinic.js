@@ -72,21 +72,12 @@ function update_notifications(){
 function update_delay(button_ref){
     var doctor_id = $(button_ref).parent().parent().parent().attr('id');
     var delay = $(button_ref).parent().find('.delay').val();
-    $.ajax({
-        url: "/doctors/" + doctor_id + "/update_delay/" + delay,
-        success: function(new_notifications) {
-            // var updatebox = $(button_ref).parent().parent();
-            // var content = updatebox.find('.ub_content');
-            // var message = updatebox.find('.ub_message');
-            // content.fadeOut(200);
-            // message.fadeIn(200).delay(500).fadeOut(200);
-            // content.fadeIn(200);
-            $(button_ref).parent().find('.handle').click();
-        },
-        error: function(new_notifications) {
-            alert('oops, don\'t seem to have been able to save. Please try again!')
-        },
-    });
+    status = $.getJSON("/doctors/" + doctor_id + "/update_delay/" + delay, function(json) {
+        // alert("Set class to " + json.status_class + " and status message to " + json.status_message);
+        $(button_ref).parent().parent().parent().find('.status').removeClass('not-delayed delayed severely-delayed').addClass(json.status_class).text(json.status_message);
+     });
+    
+    $(button_ref).parent().find('.handle').click();
     
     update_doctor_status(doctor_id, delay)
 }
