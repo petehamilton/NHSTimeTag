@@ -39,6 +39,7 @@ class DoctorsController < ApplicationController
     doctor = Doctor.find(params[:id])
     doctor.current_delay = params[:delay]
     doctor.save
+    render :nothing => true
   end
 
 end
