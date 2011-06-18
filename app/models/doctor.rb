@@ -12,7 +12,7 @@ class Doctor < ActiveRecord::Base
   
   def get_status
     if self.current_delay == 0
-      return "On Time"
+      return "Running Smoothly"
     else
         return "#{self.current_delay} minutes late"
     end

@@ -3,4 +3,4 @@
     .title
       = appointment.patient.name
     .message
-      = "From the #{appointment.doctor.name} clinic"
+      = "Was due for the #{appointment.doctor.name} clinic, #{appointment.datetime.strftime("%d/%m/%Y %I/%M")} but can no longer make their appointment"

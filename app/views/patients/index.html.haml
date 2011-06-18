@@ -2,7 +2,7 @@
 #page
   #hospitals_container
     - @hospitals.each do |hospital|
-      .hospital
+      %a{:href=>"/hospitals/#{hospital.id}/clinics", :class=>"hospital"}
         .name
           = hospital.name
         .button

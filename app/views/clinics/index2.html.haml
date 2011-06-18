@@ -2,7 +2,7 @@
 #page
   #clinics_container
     - @clinics.each do |clinic|
-      .clinic{:class => clinic.status}
+      %a{:href=>"/clinics/#{clinic.id}", :class=>"clinic #{clinic.status}"}
         .name
           return "ontime"
           = clinic.name

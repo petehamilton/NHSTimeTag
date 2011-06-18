@@ -13,6 +13,7 @@
         .content
           = "NHS TIMETAG | "
           = (@hospital) ? @hospital.name.upcase : ""
+          = (@clinic) ? " | #{@clinic.name.upcase}" : ""
       #body
         .content
           !=flash_div :warning, :notice, :success, :error
