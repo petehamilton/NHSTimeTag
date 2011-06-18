@@ -7,11 +7,14 @@
         .status.rounded-panel{:class => doctor.get_status_class}
           = doctor.get_status
       .update-box
-        .handle
-        .delay_form
-          = text_field_tag(:delay, doctor.current_delay, :size => 4)
-        .button
-          = link_to_function (image_tag('icons/accept.png')), "alert('accept')"
+        .ub_content
+          .handle
+          .delay_form
+            = text_field_tag(:delay, doctor.current_delay, :size => 4, :class=>'delay')
+          .button
+            = link_to_function (image_tag('icons/accept.png')), ""
+        .ub_message.success
+          Saved
       .clear
 
 #appointments

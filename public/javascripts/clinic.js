@@ -4,16 +4,19 @@ var notifications_last_polled = new Date().getTime() / 1000;
 $(document).ready(function() {
     setInterval(function() {
         update_notifications();
-        }, 5000);
+        }, 300000); //5 Minutes
 
         $('.handle').click(function() {
             expand_delay_editor(this);
+        });
+        $('.update-box .button').click(function() {
+            update_delay(this);
         });
         $('.handle').addClass('expand');
     });
 
 function expand_delay_editor(handle_ref){
-    $(handle_ref).parent().animate({
+    $(handle_ref).parent().parent().animate({
         'marginRight':0,
         }, 500);
 
@@ -25,8 +28,8 @@ function expand_delay_editor(handle_ref){
 }
 
 function contract_delay_editor(handle_ref){
-    $(handle_ref).parent().animate({
-        'marginRight':-160,
+    $(handle_ref).parent().parent().animate({
+        'marginRight':-120,
         }, 500);
 
         $(handle_ref).unbind('click');
@@ -59,11 +62,22 @@ function update_notifications(){
     notifications_last_polled = new Date().getTime() / 1000;
 }
 
-function update_delay(doctor_id, delay){
+function update_delay(button_ref){
+    var doctor_id = $(button_ref).parent().parent().parent().attr('id');
+    var delay = $(button_ref).parent().find('.delay').val();
     $.ajax({
         url: "/doctors/" + doctor_id + "/update_delay/" + delay,
         success: function(new_notifications) {
-            alert("saved");
+            // var updatebox = $(button_ref).parent().parent();
+            // var content = updatebox.find('.ub_content');
+            // var message = updatebox.find('.ub_message');
+            // content.fadeOut(200);
+            // message.fadeIn(200).delay(500).fadeOut(200);
+            // content.fadeIn(200);
+            $(button_ref).parent().find('.handle').click();
+        },
+        error: function(new_notifications) {
+            alert('oops, don\'t seem to have been able to save. Please try again!')
         },
     });
     
