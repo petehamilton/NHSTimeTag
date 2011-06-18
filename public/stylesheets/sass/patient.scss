@@ -1,13 +1,51 @@
 @import "shadows";
 @import "colours";
 
-#logo{
-  width: 278px;
-  height: 162px;
-  background-image: url('../images/patient_head.png');
-  background-repeat: no-repeat;
+body{
+  background-color:#eeeeee;
 }
 
 #page{
-  margin-top: 20px;
+  margin-top: 0px;
+}
+
+#patient_logo{
+  width: 996px;
+  height: 390px;
+  background-image: url('../images/patient_head.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#hospitals_container{
+  padding:20px;
+  background:#FFFFFF;
+  border:1px solid $dark_purple;
+  
+  .hospital{
+    padding:20px;
+    background-color: #EEEEEE;
+    @include text_shadow(1px, 1px, 1px, #CCCCCC);
+    
+    .name{
+      margin-top:2px;
+      float:left;
+      font-size: 1.5em;
+    }
+    
+    .button{
+      float:right;
+      width:29px;
+      height:30px;
+      background-repeat: no-repeat;
+      
+      background-repeat: no-repeat;
+      
+      &:hover{
+        cursor:pointer;
+      }
+      background-image: url('../images/arrow_buttons.png');
+      background-position: 0px 0px;
+    }
+  }
 }

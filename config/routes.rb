@@ -11,5 +11,6 @@ NHSTimeTag::Application.routes.draw do
   resources :clinics do
     resources :doctors
   end
+  resources :patients
   root :to => "home#index"
 end

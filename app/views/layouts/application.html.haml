@@ -16,9 +16,7 @@
       #body
         .content
           !=flash_div :warning, :notice, :success, :error
-          #logo
-          #page
-            = yield
+          = yield
 
     #footer
       .content
