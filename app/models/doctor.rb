@@ -6,14 +6,15 @@ class Doctor < ActiveRecord::Base
     return "#{self.first_name} #{self.last_name}"
   end
   
+  def clinic_name
+    return  "#{self.title}. #{self.last_name}"
+  end
+  
   def get_status
-    case self.current_delay
-      when 0..20
-       return "Running on time"
-      when 20..60
-        return "Delayed"
-      else
-        return "Severely Delayed"
+    if self.current_delay == 0
+      return "On Time"
+    else
+        return "#{self.current_delay} minutes late"
     end
   end
   

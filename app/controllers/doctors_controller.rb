@@ -38,6 +38,8 @@ class DoctorsController < ApplicationController
     doctor.current_delay = params[:delay]
     doctor.save
     
+    puts "Updated Doctor!"
+    
     render :json => {"status_class" => doctor.get_status_class, "status_message" => doctor.get_status}.to_json
   end
 

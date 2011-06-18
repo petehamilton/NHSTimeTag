@@ -1,18 +1,4 @@
-.appointments {
-  background-color: #ffffff;
-}
-
-.appointment {
-  border: 1px solid #000000;
-  background-color: #eeeeee;
-  padding:10px;
-  
-  .title{
-    font-weight: bold;
-  }
-}
-
-.appointment {
-  width: 720px;
-  margin: 5px;
+#doctors_wrapper{
+  background-image: url('../images/doctor_header.png');
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,13 @@
+@import "shadows";
+@import "colours";
+
+#logo{
+  width: 278px;
+  height: 162px;
+  background-image: url('../images/patient_head.png');
+  background-repeat: no-repeat;
+}
+
+#page{
+  margin-top: 20px;
+}

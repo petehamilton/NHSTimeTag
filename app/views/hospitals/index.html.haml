@@ -1,0 +1,3 @@
+%ul
+  - @hospitals.each do |hospital|
+    %li= link_to (hospital.name), hospital_clinics_path(hospital)

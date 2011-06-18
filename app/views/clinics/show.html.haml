@@ -1,24 +1,28 @@
-#doctors
-  - @doctors.each do |doctor|
-    .doctor.rounded-panel{:id => doctor.id}
-      .details
-        .name
-          = doctor.name
-        .status.rounded-panel{:class => doctor.get_status_class}
-          = doctor.get_status
-      .update-box
-        .ub_content
-          .handle
-          .delay_form
-            = text_field_tag(:delay, doctor.current_delay, :size => 4, :class=>'delay')
-          .button
-            = link_to_function (image_tag('icons/accept.png')), ""
-        .ub_message.success
-          Saved
-      .clear
+#doctors_wrapper
+  #doctors
+    - @doctors.each do |doctor|
+      .doctor{:id => doctor.id}
+        .details
+          .name
+            = doctor.clinic_name
+          .status{:class => doctor.get_status_class}
+            = doctor.get_status
+        .update-box
+          .ub_content
+            .handle
+            .form_content
+              .delay_form
+                = text_field_tag(:delay, doctor.current_delay, :size => 4, :class=>'delay')
+              .button
+                = link_to_function (image_tag('icons/accept.png')), ""
+  .clear
+
+#notifications_wrapper
+  #notifications
+    .placeholder
+      No notifications yet
 
 #appointments
 
-#notifications.rounded-panel
-  .placeholder
-    No notifications yet
+
+.clear

@@ -29,7 +29,7 @@ function expand_delay_editor(handle_ref){
 
 function contract_delay_editor(handle_ref){
     $(handle_ref).parent().parent().animate({
-        'marginRight':-120,
+        'marginRight':-110,
         }, 500);
 
         $(handle_ref).unbind('click');
@@ -72,14 +72,13 @@ function update_notifications(){
 }
 
 function update_delay(button_ref){
-    var doctor_id = $(button_ref).parent().parent().parent().attr('id');
+    var doctor_id = $(button_ref).parent().parent().parent().parent().attr('id');
     var delay = $(button_ref).parent().find('.delay').val();
     status = $.getJSON("/doctors/" + doctor_id + "/update_delay/" + delay, function(json) {
         // alert("Set class to " + json.status_class + " and status message to " + json.status_message);
-        $(button_ref).parent().parent().parent().find('.status').removeClass('not-delayed delayed severely-delayed').addClass(json.status_class).text(json.status_message);
+        $(button_ref).parent().parent().parent().parent().find('.status').removeClass('not-delayed delayed severely-delayed').addClass(json.status_class).text(json.status_message);
      });
     
-    $(button_ref).parent().find('.handle').click();
+    $(button_ref).parent().parent().find('.handle').click();
     
-    update_doctor_status(doctor_id, delay)
 }

@@ -1,3 +1,4 @@
+@import "colours";
 @import "rounded";
 @import "shadows";
 
@@ -10,8 +11,10 @@ $content_width: 960px;
 }
 
 * {
-    font: 100%/1em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    font: 100%/1em "Helvetica-Light", Verdana, Arial, Helvetica, sans-serif;
 }
+
+/* Georgia-Bold */
 
 /*Opera Footer Fix*/
 body:before {
@@ -25,7 +28,7 @@ body:before {
 html, body {height: 100%;}
 
 #wrapper, body {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 #wrapper {
@@ -38,42 +41,27 @@ html, body {height: 100%;}
     min-width: $content_width;
     width: $content_width;
     margin: 0 auto;
-    overflow:auto;
     padding-bottom: 35px;
 }
 
 #header {
-    background-image: url("../images/header_bg.png");
-    background-repeat: repeat-x;
-    height: 77px;
+    height: 20px;
+    background-color: $dark_purple;
     border-bottom: 2px solid #999999;
     color: #FFFFFF;
-    
-    a {
-        @include hoverable();
-        
-        &:hover {
-            text-shadow: 0px 0px 0px;
-        }
-    }
-    
-    #logo {
-        float: left;
-        width: 214px;
-        height: 60px;
-        display:block;
-    }
+    font-size: 0.8em;
+    padding: 5px 0px 0px 5px;
 }
 
 #footer{
-    background-image: url("../images/footer_bg.png");
-    background-repeat: repeat-x;
+    background-color: $dark_purple;
+    font-size: 0.8em;
+    padding: 5px 0px 0px 5px;
     height: 28px;
     border-top: 1px solid #999999;
     color: #FFFFFF;
     padding-top: 10px;
     font-size:14px;
-    text-shadow: 1px 1px 1px black;
     
     min-width: $content_width;
     width: $page_width;
@@ -87,14 +75,16 @@ html, body {height: 100%;}
     }
     
     #copyright{
-        float:left;
+        text-align: center;
+        width:200px;
+        margin: 0 auto;
     }
 }
 
 #body {
     padding-top: 20px;
     padding-bottom:50px;   /* Height of the footer */
-    min-height: 200px;
+    min-height: 400px;
 }
 
 a{

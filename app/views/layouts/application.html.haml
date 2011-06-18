@@ -11,10 +11,12 @@
     #wrapper
       #header
         .content
-          #logo
+          = "NHS TIMETAG | "
+          = (@hospital) ? @hospital.name.upcase : ""
       #body
         .content
           !=flash_div :warning, :notice, :success, :error
+          #logo
           #page
             = yield
 
