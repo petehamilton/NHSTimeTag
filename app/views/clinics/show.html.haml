@@ -1,11 +1,17 @@
 #doctors
   - @doctors.each do |doctor|
-    .doctor{:id => doctor.id}
+    .doctor.rounded-panel{:id => doctor.id}
       .details
         .name
           = doctor.name
-        .status
+        .status.rounded-panel{:class => doctor.get_status_class}
           = doctor.get_status
-      .update_box
+      .update-box
+        .handle
+        .delay_form
+          = text_field_tag(:delay, doctor.current_delay, :size => 4)
+        .button
+          = link_to_function (image_tag('icons/accept.png')), "alert('accept')"
+      .clear
 
-#notifications
+#notifications.rounded-panel

@@ -1,3 +1,6 @@
+@import "rounded";
+@import "shadows";
+
 /* Variables */
 $page_width: 100%;
 $content_width: 960px;
@@ -112,6 +115,19 @@ ul{
             list-style-position: inside;
         }
     }
+}
+
+/* Random useful styles */
+.rounded-panel{
+  border: 2px solid #CCCCCC;
+  background-color: #FFFFFF;
+  padding: 10px;
+  @include rounded(all,8px);
+  @include inset_shadow(2px, 2px, 3px, #eeeeee);
+}
+
+.clear{
+  clear:both;
 }
 
 /* Notice/Alert stuff */
