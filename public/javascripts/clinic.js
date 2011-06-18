@@ -4,7 +4,7 @@ var notifications_last_polled = new Date().getTime() / 1000;
 $(document).ready(function() {
     setInterval(function() {
         update_notifications();
-        }, 300000); //5 Minutes
+        }, 10000); //5 Minutes
 
         $('.handle').click(function() {
             expand_delay_editor(this);
@@ -56,10 +56,17 @@ function update_notifications(){
         success: function(new_notifications) {
             // Add the new notifications to the notifications container
             $('#notifications').prepend(new_notifications);
+            $('.notification').css('opacity',0.5);
+            $('.notification.new').fadeIn(500);
+            $('.notification.new').effect("pulsate", { times:3 }, 500);
+            $('.notification.new').click(function (){
+                $(this).fadeOut(500).remove();
+            });
+            $('.notification.new').removeClass('new');
         },
     });
 
-    notifications_last_polled = new Date().getTime() / 1000;
+    // notifications_last_polled = new Date().getTime() / 1000;
 }
 
 function update_delay(button_ref){

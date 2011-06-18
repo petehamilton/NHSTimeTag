@@ -80,20 +80,3 @@
     }
   }
 }
-
-#notifications{
-  
-  width: 200px;
-  float:right;
-  min-height:200px;
-  
-  .notification {
-    width: 200px;
-    border: 1px solid #000000;
-    background-color: #eeeeee;
-  
-    .title{
-      font-weight: bold;
-    }
-  }
-}

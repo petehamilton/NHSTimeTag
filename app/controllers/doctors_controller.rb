@@ -25,10 +25,10 @@ class DoctorsController < ApplicationController
       @appointments = Appointment.where("updated_at > ? AND attending = ?", @last_polled, false)
     end
     
-    @appointments.each do |appointment|
-      appointment.touch
-      appointment.save
-    end
+    # @appointments.each do |appointment|
+    #   appointment.touch
+    #   appointment.save
+    # end
     
     puts @appointments.inspect
     
