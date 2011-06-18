@@ -3,10 +3,10 @@ class PatientMailer < ActionMailer::Base
   default :subject => "Message From NHS Time Track"
   
   def plain_email(patient, message)  
-      mail(:to => patient.email)  
+      mail(:to => patient.email, :body = message)  
   end
   
-  def plain_email(patient, message)  
-      mail(:to => patient.email, :subject => subject, :body = message)  
+  def plain_email(patient, message)
+      mail(:to => patient.email, :body = message)
   end
 end
