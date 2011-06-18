@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20110617143946) do
 
   create_table "hospitals", :force => true do |t|
     t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
