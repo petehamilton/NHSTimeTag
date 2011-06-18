@@ -1,5 +1,7 @@
-.notification {
-  width: 200px;
+.appointments {
+  background-color: #ffffff;
+}
+.notification, .appointment {
   border: 1px solid #000000;
   background-color: #eeeeee;
   padding:10px;
@@ -7,4 +9,11 @@
   .title{
     font-weight: bold;
   }
+}
+.notification {
+  width: 200px;
+}
+.appointment {
+  width: 720px;
+  margin: 5px;
 }
