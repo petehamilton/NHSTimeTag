@@ -1,20 +1,81 @@
-@import "rounded";
+@import "shadows";
+
 #doctors{
   width: 700px;
+  float:left;
   .doctor{
-    border: 1px solid #CCCCCC;
-    background-color: #FFFFFF;
-    padding: 10px;
-    @include rounded(all,4px);
+    @include text_shadow(1px, 1px, 2px, #cccccc);
+    padding: 0px;
+    overflow: hidden;
+    height:60px;
+    .name{
+      padding: 20px;
+      font-size: 1.2em;
+      float:left;
+      margin-right:40px;
+    }
+    .status{
+      margin-top:10px;
+      margin-bottom:10px;
+      float:left;
+      border-width:0px;
+      &.not-delayed{
+        background-color:#A3E639;
+      }
+      &.delayed{
+        background-color:#FEEFB3;
+      }
+      &.severely-delayed{
+        background-color:#FFBABA;
+      }
+    }
+    .update-box{
+      float:right;
+      width:200px;
+      margin-right:-160px;
+      height:100px;
+      background-color:#eeeeee;
+      border-left:2px solid #333333;
+      overflow: hidden;
+      .handle{
+        float:left;
+        margin-left:10px;
+        margin-right:15px;
+        margin-top: 21px;
+        width:20px;
+        height:20px;
+        background-repeat: no-repeat;
+        &.expand{
+          background-image: url('../images/icons/control_rewind_blue.png');
+        }
+        &.contract{
+            background-image: url('../images/icons/control_fastforward_blue.png');
+        }
+      }
+      .delay_form{
+        margin-top:14px;
+        float:left;
+        margin-right:10px;
+      }
+      .button{
+        margin-top: 21px;
+        
+        float:left;
+      }
+    }
   }
 }
 
 #notifications{
+  
+  width: 200px;
+  float:right;
+  min-height:200px;
+  
   .notification {
     width: 200px;
     border: 1px solid #000000;
     background-color: #eeeeee;
-    padding:10px;
   
     .title{
       font-weight: bold;

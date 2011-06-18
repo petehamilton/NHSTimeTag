@@ -16,4 +16,15 @@ class Doctor < ActiveRecord::Base
         return "Severely Delayed"
     end
   end
+  
+  def get_status_class
+    case self.current_delay
+      when 0..60
+        return "not-delayed"
+      when 60..120
+        return "delayed"
+      else
+        return "severely-delayed"
+    end
+  end
 end
